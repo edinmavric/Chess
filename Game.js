@@ -34,6 +34,10 @@ class Game {
       const position = this.getPieceByName(name).position;
       const clickedSquare = document.getElementById(position);
 
+      /*if (event.type == 'click' && this.clickedPiece && this.clickedPiece.name == name) {
+				this.setClickedPiece(null);
+				return this.clearSquares();
+			}*/
       clickedSquare.classList.add("clicked-square");
 
       allowedMoves.forEach((allowedMove) => {
